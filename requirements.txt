@@ -1,0 +1,6 @@
+fastapi==0.85.1
+uvicorn==0.18.3
+chromadb==0.3.23
+sentence-transformers==2.2.2
+pymupdf==1.21.1  # PyMuPDF for PDF processing
+python-docx==0.8.11
