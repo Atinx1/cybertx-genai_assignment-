@@ -39,13 +39,13 @@ uvicorn main:app --reload # http://127.0.0.1:8000
 ## Usage
 
 **Ingest Documents**
-To ingest documents, send a POST request to the /ingest/ endpoint with one or more files.
+- To ingest documents, send a POST request to the /ingest/ endpoint with one or more files.
 **Command**
-curl -X POST "http://127.0.0.1:8000/ingest/" -F "files=@path_to_your_file/l.txt"
+- curl -X POST "http://127.0.0.1:8000/ingest/" -F "files=@path_to_your_file/l.txt"
 
 **Query Documents**
-To search within ingested documents, send a POST request to the /query/ endpoint with a JSON body containing your query string.
+- To search within ingested documents, send a POST request to the /query/ endpoint with a JSON body containing your query string.
 **Command**
-curl -X POST "http://127.0.0.1:8000/query/" -H "Content-Type: application/json" -d "{\"query\": \"sample search term\"}"
+- curl -X POST "http://127.0.0.1:8000/query/" -H "Content-Type: application/json" -d "{\"query\": \"sample search term\"}"
 
 
